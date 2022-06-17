@@ -21,13 +21,13 @@
     <string name="health_description">Hang on with health everywhere</string>
 
     <string name="science_title">Science</string>
-    <string name="science_description">Live science feature</string>
+    <string name="science_description">Keep growing with science everywhere</string>
 
     <string name="sports_title">Sports</string>
-    <string name="sports_description">Provide the best for you in sport</string>
+    <string name="sports_description">Go on with sport wherever you are</string>
 
     <string name="technology_title">Technology</string>
-    <string name="technology_description">Keep up with technology developments everywhere</string>
+    <string name="technology_description">Go forward with technology all over</string>
 
     <string name="bbc_news_title">BBC</string>
     <string name="cnn_news_title">CNN</string>
