@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.home.CategoriesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical"
+        android:paddingBottom="12dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_business"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/gray_100"
+            android:layout_marginBottom="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/img_business"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/business"
+                    app:shapeAppearanceOverlay="@style/roundedCornersImageView" />
+
+                <TextView
+                    android:id="@+id/tv_title_business"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@+id/img_business"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/business_title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_category"/>
+
+                <TextView
+                    android:id="@+id/tv_description_business"
+                    android:layout_toEndOf="@+id/img_business"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="12dp"
+                    android:layout_below="@+id/tv_title_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/description_category"
+                    android:text="@string/business_description"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_entertainment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/gray_100"
+            android:layout_marginBottom="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/img_entertainment"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/entertainment"
+                    app:shapeAppearanceOverlay="@style/roundedCornersImageView" />
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/tv_title_entertainment"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/title_category"
+                    android:layout_toEndOf="@+id/img_entertainment"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entertainment_title"/>
+
+                <TextView
+                    android:id="@+id/tv_description_entertainment"
+                    android:layout_toEndOf="@+id/img_entertainment"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="12dp"
+                    android:textSize="@dimen/description_category"
+                    android:layout_below="@+id/tv_title_entertainment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entertainment_description"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_general"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/gray_100"
+            android:layout_marginBottom="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/img_general"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/general"
+                    app:shapeAppearanceOverlay="@style/roundedCornersImageView" />
+
+                <TextView
+                    android:id="@+id/tv_title_general"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/img_general"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/general_title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_category" />
+
+                <TextView
+                    android:id="@+id/tv_description_general"
+                    android:layout_toEndOf="@+id/img_general"
+                    android:textSize="@dimen/description_category"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="12dp"
+                    android:layout_below="@+id/tv_title_general"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/general_description"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_health"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/gray_100"
+            android:layout_marginBottom="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/img_health"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/health"
+                    app:shapeAppearanceOverlay="@style/roundedCornersImageView" />
+
+                <TextView
+                    android:id="@+id/tv_title_health"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginTop="12dp"
+                    android:textSize="@dimen/title_category"
+                    android:layout_toEndOf="@+id/img_health"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/health_title"/>
+
+                <TextView
+                    android:id="@+id/tv_description_health"
+                    android:layout_toEndOf="@+id/img_health"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="12dp"
+                    android:layout_below="@+id/tv_title_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/description_category"
+                    android:text="@string/health_description"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_science"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/gray_100"
+            android:layout_marginBottom="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/img_science"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/science"
+                    app:shapeAppearanceOverlay="@style/roundedCornersImageView" />
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/tv_title_science"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/title_category"
+                    android:layout_toEndOf="@+id/img_science"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/science_title"/>
+
+                <TextView
+                    android:id="@+id/tv_description_science"
+                    android:layout_toEndOf="@+id/img_science"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="12dp"
+                    android:textSize="@dimen/description_category"
+                    android:layout_below="@+id/tv_title_science"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/science_description"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_sports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/gray_100"
+            android:layout_marginBottom="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/img_sports"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sport"
+                    app:shapeAppearanceOverlay="@style/roundedCornersImageView" />
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/tv_title_sports"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/title_category"
+                    android:layout_toEndOf="@+id/img_sports"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sports_title"/>
+
+                <TextView
+                    android:id="@+id/tv_description_sports"
+                    android:layout_toEndOf="@+id/img_sports"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="12dp"
+                    android:layout_below="@+id/tv_title_sports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/description_category"
+                    android:text="@string/sports_description"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_technology"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/gray_100"
+            android:layout_marginBottom="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/img_technology"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/technology"
+                    app:shapeAppearanceOverlay="@style/roundedCornersImageView" />
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/tv_title"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/title_category"
+                    android:layout_toEndOf="@+id/img_technology"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/technology_title"/>
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_toEndOf="@+id/img_technology"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="12dp"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/description_category"
+                    android:text="@string/technology_description"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

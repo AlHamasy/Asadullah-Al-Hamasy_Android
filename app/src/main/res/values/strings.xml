@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="title_activity_home">News API</string>
+    <string name="tab_text_1">Categories</string>
+    <string name="tab_text_2">Sources</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="business_title">Business</string>
+    <string name="business_description">Keep pace with business universally</string>
+
+    <string name="entertainment_title">Entertainment</string>
+    <string name="entertainment_description">Get along with entertainment everyplace</string>
+
+    <string name="general_title">General</string>
+    <string name="general_description">Hold on with general anywhere</string>
+
+    <string name="health_title">Health</string>
+    <string name="health_description">Hang on with health everywhere</string>
+
+    <string name="science_title">Science</string>
+    <string name="science_description">Live science feature</string>
+
+    <string name="sports_title">Sports</string>
+    <string name="sports_description">Provide the best for you in sport</string>
+
+    <string name="technology_title">Technology</string>
+    <string name="technology_description">Keep up with technology developments everywhere</string>
+
+    <string name="bbc_news_title">BBC</string>
+    <string name="cnn_news_title">CNN</string>
+    <string name="cnbc_news_title">CNBC</string>
+    <string name="independent_title">Independent</string>
+    <string name="reuters_title">Reuters</string>
+    <string name="vice_news_title">Vice</string>
+    <string name="fox_title">Fox</string>
+    <string name="cbs_title">CBS</string>
+    <string name="espn_title">ESPN</string>
+    <string name="wired_title">Wired</string>
+    <string name="row_title">UK Reveals plans to ditch parts of EU Brexit Day</string>
+    <string name="row_description">Plans to ditch part of the</string>
+    <string name="web_view">Web View</string>
+    <string name="bbc_source">bbc-news</string>
+    <string name="cnn_source">cnn</string>
+    <string name="wired_source">wired</string>
+    <string name="fox_source">fox-news</string>
+    <string name="reuters_source">reuters</string>
+    <string name="vice_source">vice-news</string>
+    <string name="cbs_source">cbs-news</string>
+    <string name="espn_source">espn</string>
+    <string name="independent_source">independent</string>
+
+</resources>
